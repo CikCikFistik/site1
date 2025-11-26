@@ -19,23 +19,24 @@
             border: none;
         }
 
-        /* Eklediğimiz beyaz overlay */
-        .overlay {
+        /* ★ Eklenen kısım — sadece Wix barını kapatır */
+        .wix-blocker {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
+            height: 50px; /* Wix banner yüksekliği */
             background: white;
-            z-index: 999999; /* her şeyin üstünde */
+            z-index: 999999;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 32px;
             font-family: Arial, sans-serif;
+            font-size: 16px;
             font-weight: bold;
             color: black;
         }
+        /* ★ Eklenen kısım bitişi */
     </style>
 </head>
 <body>
@@ -43,11 +44,11 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9491301376921806"
      crossorigin="anonymous"></script>
 
-<!-- Wix site -->
 <iframe src="https://cikcikfistik.wixsite.com/birdssssss" allowfullscreen></iframe>
 
-<!-- Üste eklediğimiz beyaz panel -->
-<div class="overlay">By: FistikTheBird</div>
+<!-- ★ Eklenen kısım -->
+<div class="wix-blocker">By: FistikTheBird</div>
+<!-- ★ Eklenen kısım bitişi -->
 
 </body>
 </html>
