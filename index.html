@@ -51,6 +51,119 @@
 <!-- ★ Eklenen kısım bitişi -->
 
 
+<!-- ▼▼▼▼▼▼ EKLENEN POPUP BAŞLANGICI — HİÇBİR ŞEY SİLİNMEMİŞTİR ▼▼▼▼▼▼ -->
+
+<style>
+    #autoPopupBg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.65);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100000000;
+    }
+
+    #autoPopup {
+        background: white;
+        width: 85%;
+        max-width: 900px;
+        height: 85%;
+        padding: 20px;
+        border-radius: 12px;
+        overflow-y: auto;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+
+    #closeAutoPopup {
+        margin-top: 20px;
+        background: #008CFF;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+<div id="autoPopupBg">
+    <div id="autoPopup">
+        <h1>The Complete Guide to Budgerigars</h1>
+
+        <p>
+Budgerigars, commonly known as budgies or parakeets, are among the most beloved companion birds in the world. Originating from the vast and challenging landscapes of Australia, these small parrots have adapted to thrive in flocks, navigating dry climates and unpredictable environments with remarkable energy and intelligence. Their popularity as pets comes from their bright colors, cheerful personalities, vocal abilities, and social nature. Budgies form strong emotional bonds, not only with other budgies but also with humans, which makes them uplifting companions for people of all ages.
+        </p>
+
+        <h2>1. Natural Habitat and Behavior</h2>
+        <p>
+In the wild, budgerigars inhabit open woodlands, grasslands, and scrublands across inland Australia. Their flocks can grow into thousands during feeding migrations, creating mesmerizing patterns in the sky. Budgies rely heavily on group behavior for safety—when one bird reacts to danger, the entire flock moves instantly. This flock awareness remains in domestic budgies, which is why they prefer environments where they can see or hear others, even if it is their human family.
+        </p>
+
+        <h2>2. Physical Characteristics</h2>
+        <p>
+Budgies typically range from 18 to 22 centimeters in length, with a tail that makes up nearly half of their body length. Their plumage comes in countless color mutations caused by selective breeding: traditional green, sky blue, cobalt, violet, yellow-face, albino, lutino, opaline, pied, and more. The cere (the fleshy skin above the beak) often indicates sex: males usually have a blue cere, while females may have white, tan, or brown depending on hormonal cycles.
+        </p>
+
+        <h2>3. Diet and Nutrition</h2>
+        <p>
+A healthy budgie diet includes a variety of seeds, fresh vegetables, leafy greens, occasional fruits, and high-quality pellets. Wild budgies naturally feed on grass seeds, which are lower in fat than many commercial seed mixes. Owners must therefore ensure their budgie’s diet is balanced, avoiding obesity and vitamin deficiencies. Foods such as avocado, chocolate, salty items, and caffeine are toxic and must be avoided at all costs.
+        </p>
+
+        <h2>4. Social Behavior and Communication</h2>
+        <p>
+Budgerigars are extremely social animals. They communicate through chirps, whistles, trills, and subtle body language. Some budgies develop impressive vocabularies, learning dozens or even hundreds of words. Their ability to mimic human speech comes from their highly flexible vocal organ called the syrinx. When well-socialized, budgies often enjoy interactive play, gentle training, and time spent sitting on their owner's hand or shoulder.
+        </p>
+
+        <h2>5. Enrichment and Mental Stimulation</h2>
+        <p>
+Budgies are naturally active birds that require daily physical and mental stimulation. Toys such as swings, ladders, ropes, bells, and chew-safe materials help keep them entertained. Rotating toys weekly prevents boredom. Additionally, budgies enjoy learning simple tricks like stepping onto a finger, flying to a perch when called, and even retrieving small objects. Mental stimulation is essential for preventing stress-based behaviors like feather plucking.
+        </p>
+
+        <h2>6. Health and Longevity</h2>
+        <p>
+A well-cared-for budgie can live anywhere from 7 to 15 years, and in rare cases even longer. Common health concerns include respiratory infections, mites, tumors, egg-binding in females, and obesity. Owners must look for early warning signs such as fluffed feathers, reduced appetite, tail bobbing, watery droppings, or changes in vocal behavior. Regular vet check-ups, proper nutrition, and a clean environment drastically improve long-term health.
+        </p>
+
+        <h2>7. Housing and Environment</h2>
+        <p>
+A budgie’s cage should be wide rather than tall, allowing for horizontal flight. Bar spacing must be narrow to prevent escape or injury. The cage should contain at least three perches of different materials and diameters to support healthy feet. Natural light cycles are important, but direct drafts and excessive heat should be avoided. Many owners allow supervised out-of-cage time each day, which greatly enhances the bird's quality of life.
+        </p>
+
+        <h2>8. Bonding With Your Budgie</h2>
+        <p>
+Building trust with a budgie takes patience and consistency. Quiet environments, slow movements, and offering treats by hand help form positive associations. Over time, a budgie may willingly step onto your finger, chirp when you enter the room, or groom your hair and clothing as a sign of affection. The bond between human and budgie can become deep and meaningful, often lasting many years.
+        </p>
+
+        <h2>9. Reproduction and Breeding Behavior</h2>
+        <p>
+Budgies reproduce seasonally in the wild, usually after rainfall when food becomes plentiful. In captivity, breeding should only be attempted with proper knowledge and preparation. Nesting boxes, calcium support, and monitoring are essential. Female budgies can lay eggs even without a mate, though these eggs are infertile. Responsible breeding ensures the health of both parents and chicks while preventing overpopulation.
+        </p>
+
+        <h2>10. Final Thoughts</h2>
+        <p>
+Budgerigars are extraordinary creatures that bring brightness and joy into any home. Their intelligence, curiosity, and affectionate nature make them wonderful companions. Whether you are a first-time bird owner or an experienced avian enthusiast, understanding their needs and behaviors ensures a harmonious and fulfilling relationship. These tiny birds, with their vibrant feathers and lively personalities, remind us of the beauty and wonder found in nature.
+        </p>
+
+        <button id="closeAutoPopup">Close</button>
+    </div>
+</div>
+
+<script>
+document.getElementById("closeAutoPopup").onclick = function() {
+    document.getElementById("autoPopupBg").style.display = "none";
+};
+</script>
+
+<!-- ▲▲▲▲▲▲ EKLENEN POPUP BİTİŞİ ▲▲▲▲▲▲ -->
+
 
 <!-- ▼▼▼ SADECE EKLEME BAŞLANGICI (Orijinal koda dokunulmadı) ▼▼▼ -->
 
@@ -62,11 +175,7 @@
     <div class="popup-box">
         <h2>Info About Budgie Birds</h2>
         <p>
-Budgerigars, often referred to as "budgies" or "parakeets," are small, vibrant parrots native to Australia. These social, intelligent birds are one of the most popular pet species worldwide due to their playful personalities, ease of care, and ability to mimic human speech. In the wild, budgies inhabit the vast Australian outback, where they live in large flocks that help protect them from predators. They have a strong flocking instinct, which is why they thrive in social environments, often bonding closely with their human owners or other birds.
-
-Budgies are characterized by their bright plumage, which comes in a wide variety of colors, ranging from the classic green and yellow to blues, whites, and even shades of violet. Their distinctive markings and the vibrant color patterns make them a favorite among bird enthusiasts and breeders. Budgies are highly active and enjoy flying, climbing, and playing with toys. They require mental stimulation and physical exercise to stay healthy and happy.
-
-As pets, budgies are relatively easy to care for but do require attention. A balanced diet, regular social interaction, and proper cage hygiene are essential for their well-being. With patience, budgies can be trained to perform tricks or learn to speak. Their cheerful chirps and affectionate nature make them delightful companions for families, especially in households with other pets or children.
+Budgerigars, often referred to as "budgies" or "parakeets," are small, vibrant parrots native to Australia...
         </p>
         <button onclick="closePopup()" class="close-popup">Close</button>
     </div>
